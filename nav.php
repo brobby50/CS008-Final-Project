@@ -1,8 +1,23 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<!-- ///////////////////////////   Nav   /////////////////////////// -->
+<nav>
+    <ol>
+        <?php
+      
+        print '<li class="';
+        if ($path_parts['filename'] == "index") {
+            print ' activePage ';
+        }
+        print '">';
+        print '<a href="index.php">Home</a>';
+        print '</li>';
+        
+        print '<li class="';
+        if ($path_parts['filename'] == "tutorial") {
+            print ' activePage ';
+        }
+        print '">';
+        print '<a href="tutorial.php">Tutorial</a>';
+        print '</li>';
+        ?>
+    </ol>
+</nav>
