@@ -1,7 +1,14 @@
-body {
-   background-image: url("background.png");
+header {
+   background-image: url("header.jpg");
    background-repeat: repeat-x;
-   background-color: #616a6a;
+   
+}
+nav{
+    background-image: url("header.jpg");
+    background-repeat: repeat-x;
+}
+body{
+    background-color: #616a6a;
 }
 .dropbtn {
     background-color: #4CAF50;
