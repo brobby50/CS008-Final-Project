@@ -4,7 +4,7 @@
         <button class="dropbtn"> More Pages</button>
         <option class="dropdown-content">
             <a href="index.php">Home<?php $page = "Home Page"; ?> </a>
-            <a href="repository.php">Tutorial<?php $page = "Repository Page"; ?></a>
+            <a href="repository.php">Repository<?php $page = "Repository Page"; ?></a>
             <a href="pullPush.php">Pull Push<?php $page = "PullPush Page"; ?></a>
             <a href="branch.php">Branch<?php $page = "Branch Page"; ?></a>
             <a href="merging.php">Merging<?php $page = "Merging Page"; ?></a>
