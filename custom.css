@@ -10,11 +10,12 @@ header{
 }
 
 nav{
-    
+    padding: 27px;
 }
 
 
 .menu li{
+    vertical-align: text-top;
     display: inline-block;
     top: 0px;
     font-size: 20px;
@@ -33,7 +34,7 @@ h2{
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 16px;
+    padding: 14px;
     font-size: 16px;
     border: none;
 }
