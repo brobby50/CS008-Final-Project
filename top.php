@@ -24,5 +24,4 @@ $path_parts = pathinfo($phpSelf);
 
     print('<!-- ///////////////////////////  Body  /////////////////////////// -->');
     include ('header.php');        
-    include ('nav.php'); 
 ?>

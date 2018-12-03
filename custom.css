@@ -1,14 +1,34 @@
-header {
-   background-image: url("header.jpg");
-   background-repeat: repeat-x;
-   
-}
-nav{
+header{
     background-image: url("header.jpg");
     background-repeat: repeat-x;
+    height: 6em;
+    top: 0px;
+    position: sticky;
+    
+    width: -moz-available;
+    margin-left: -.3em;
 }
+
+nav{
+    
+}
+
+
+.menu li{
+    display: inline-block;
+    top: 0px;
+    font-size: 20px;
+}
+
 body{
+    
     background-color: #616a6a;
+}
+article{
+    margin-top: 0em;
+}
+h2{
+    margin-top: 0em;
 }
 .dropbtn {
     background-color: #4CAF50;

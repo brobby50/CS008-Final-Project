@@ -1,5 +1,12 @@
 <!-- ///////////////////////////   Header   /////////////////////////// -->
 <header>
-    <h1>Final Project GitHub</h1>
-    
+    <ul class="menu">
+        <li>
+            <h1>Final Project GitHub</h1>
+        </li>
+        <li>    
+            <?php include ('nav.php'); ?> 
+        </li>
+    </ul>
+                
 </header>
