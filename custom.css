@@ -77,3 +77,65 @@ nav{
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* form section */     
+fieldset{
+    border: 3px solid #00627f;
+    clear: both;
+    margin-top: 3em;
+    padding: 1.5em;
+}
+ label {
+    color: #245cb3;
+    display: block;
+    font-weight: bold;
+    padding-right: 1.5em;
+}
+input,
+textarea,
+select{
+    box-sizing: border-box;
+    border: 3px solid #C2C2C2;
+    box-shadow: 2px 2px 3.5px #EBEBEB; 
+    border-radius: 4px;
+    padding: 2em;
+}
+input:focus,
+textarea:focus,
+select:focus{
+    border: 1px solid #0D0;
+}     
+ input[type=submit]{
+    background: #005cb3 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #dadada;
+    color: #fff;
+    width: 100%;
+}
+ .buttons legend{
+    display: none;
+}
+ .buttons{
+    text-align: center;
+}
+ .form-heading {
+    border-bottom: 2px solid #ddd;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 1.8em;
+    padding-bottom: 0.3em;
+}
+ .text-field{
+    width: 100%;
+}      
+/* mistake css */
+.mistake {
+    color: #fff;
+    background-color:#600;
+    border: thin solid #000;
+}     
+#errors ol li{
+   color: #ff4444;
+}

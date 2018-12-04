@@ -20,8 +20,15 @@ $path_parts = pathinfo($phpSelf);
     </head>
     
 <?php
-     print '<body id="' . $path_parts['filename'] . '">';
-
+    $domain = '//';
+    $server = htmlentities($_SERVER['SERVER_NAME'], ENT_QUOTES, 'UTF-8');
+    $domain .= $server;
+    
+    require_once 'lib/security.php';
+    include_once 'lib/validation-functions.php';
+    include_once 'lib/mail-message.php';
+    
+    print '<body id="' . $path_parts['filename'] . '">';
     print('<!-- ///////////////////////////  Body  /////////////////////////// -->');
     include ('header.php');        
 ?>
