@@ -10,7 +10,7 @@ include ('top.php');
     <h5>Protected Branches:</h5>
     <p>Repository administrators can protect branches. This means that the admin can put certain restrictions on a branch that prevent users from deleting for force pushing a branch (learn more about push and pull requests on our Pull request sections). The purpose of this is to enforce certain workflows on repositories before they are merged. Protecting a branch gives the admin many different options for regulating how different programmers can push pull form a branch. Admins can require reviews on merge requests as well as frequent status checks on a branch. You won’t be able to merge a branch until all the requirements from a status check or review are made. You also won’t be able to push and commits to the branch unless they are signed or verified.</p>
     <h6>How to create a branch: </h6>
-    <ol>
+    <ul>
         <li>At the main page of your repository, click on the branch selector drop-down menu</li>
         <li>
             <figure class="branch">
@@ -21,9 +21,9 @@ include ('top.php');
         <li>Then you simple enter a unique name to your name</li>
         <li>be sure that the name is also descriptive of that branches purpose</li>
         <li>Then hit enter</li>
-    </ol>
+    </ul>
     <h7>Deleting a branch:</h7>
-    <ol>
+    <ul>
         <li>Go to the main page of your repository and click on the branch list of branches at the top navigation bar</li>
         <li>
             <figure class="branch">
@@ -39,7 +39,7 @@ include ('top.php');
                 <figcaption></figcaption>
             </figure>
         </li>
-    </ol>
+    </ul>
 </article>
 <?php
 include ('footer.php');

@@ -1,35 +1,47 @@
+*{
+   font-family: Bookman Old Style;
+}
 header{
     background-image: url("images/header.jpg");
     background-repeat: repeat-x;
     height: 6em;
     top: 0px;
     position: sticky;
-    
-    width: -moz-available;
+    width: 100%;
     margin-left: -.3em;
 }
+h2, h3, h4, h5, h6, h7, h8{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 24px;
+}
+img{
+    max-width: 100%;
+}
 
+body{
+    background-color: #616a6a;
+    margin: auto;
+    width: 93%; 
+    font-size: 16px;
+}
+article{
+    margin-top: 0em;
+}
+
+ul {
+list-style-type: none;
+}
+/* ########################## Dropdown menu ############################# */
 nav{
     padding: 27px;
 }
-
 
 .menu li{
     vertical-align: text-top;
     display: inline-block;
     top: 0px;
     font-size: 20px;
-}
-
-body{
-    
-    background-color: #616a6a;
-}
-article{
-    margin-top: 0em;
-}
-h2{
-    margin-top: 0em;
 }
 .dropbtn {
     background-color: #4CAF50;

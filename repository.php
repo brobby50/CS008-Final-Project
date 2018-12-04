@@ -7,7 +7,7 @@
         </p>
        
         <h3>How to make a repository:</h3>
-        <ol>
+        <ul>
             <li>First you must click the plus sign in the top right corner</li>
             <li>then select “new repository” from the drop-down menu</li>
             <li>
@@ -45,12 +45,12 @@
                 </figure>
             </li>
             <li>*Note* You should skip the repository step if you’re importing an existing repository.</li>
-        </ol>
+        </ul>
         <h4>Organizing Repositories:</h4>
         <p> If you’re part of a team of programmers, whether it’s for a business or freelance, it’s quite beneficial to organize repositories. When you create an organization, all repositories exist under the organization. Organizations offer more in-depth permission controls. Since organizations are split up into teams of programmers, each team has three levels of permissions. There can be a Pull Only level which means that members of the team have access to read the code, but they may not push to the repository. Another level is Push & Pull. This is the default permission level collaborators have. At this level users can push and pull code form repositories buy can’t change the organizations meta data such as name, private/public status, teams, etc. Finally, there’s Push & Pull & Admin. At this level a user can push and pull code and change meta data. This is the same level as permission the project owner has. There are three different pricing plans for an organization. The first option is free, and only allows for unlimited public repositories. The second option is $9 per month per user and it and it grants unlimited public and private repositories. The last option, which is most commonly used for businesses, includes everything in the prior package as well as SAML single based sign-on, access providing, very high uptimes, and very quick email response. This option is $21 per user per month.
         </p>
         <h5>How to create an organization:</h5>
-        <ol>
+        <ul>
             <li>Just like creating repositories you click on the plus at the top right of the screen</li>
             <li>
                 <figure class="repository">
@@ -94,7 +94,7 @@
                 </figure>
             </li>
             <li>And now your organization is created</li>
-        </ol>
+        </ul>
     </article>
 
         

@@ -5,10 +5,9 @@ include ('top.php');
     <h2>Final Project merge</h2>
     <h3>Merging Branches and Git Flow</h3>
     <h4>Merging</h4>
-    <p>The final step of editing any repository is to merge two branches. One of the branches will always be the master branch and the other will be a copy of the master branch that has been edited. By merging the two branches programmers can take the changes made in one branch and apply them to the other. Both branches will remain. 
-    </p>
+    <p>The final step of editing any repository is to merge two branches. One of the branches will always be the master branch and the other will be a copy of the master branch that has been edited. By merging the two branches programmers can take the changes made in one branch and apply them to the other. Both branches will remain.</p>
     <h5>How to merge a pull request</h5>
-    <ol>
+    <ul>
         <li>First you open your pull request tab and look for the pull request you want to merge</li>
         <li>Once you have found it you simply click “Merge Pull Request”</li>
         <li>
@@ -24,7 +23,7 @@ include ('top.php');
                 <figcaption></figcaption>
             </figure>
         </li>
-    </ol>
+    </ul>
     <h6>Git Flow and other useful information</h6>
     <p>Now that we’ve gone over all the different aspects of GitHub, let’s review the flow. The Git Flow is all the steps you take to implement the different aspect.</p>
     <p>First you create a branch. Remember that branches are copies of their masters and they are used for edits. Branches allow for many people on a team to make parallel efforts towards a project. They’re also great for keep different members up to date with changes made to a project.</p>
