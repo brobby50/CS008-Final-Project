@@ -18,11 +18,11 @@ print PHP_EOL . '<!-- SECTION: 1b form variables -->' . PHP_EOL;
 // in the order they appear on the form
 $name = ""; 
 
-$email = "rbeattie@uvm.edu";  
+$email = "";  
 
 $question = "";
 
-$language = "Python";    // pick the option
+$language = "C++";    // pick the option
 
 $repository = true;    // checked
 $pushPull = false; // not checked

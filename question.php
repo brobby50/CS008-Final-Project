@@ -103,7 +103,7 @@ include ('top.php');
         print'</tr>' . PHP_EOL;
     }
    
-    print '<tr><td colspan="10">' . count($questionDetails)." Total Questions Summited</td></tr>";
+    print '<tr><td colspan="6">' . count($questionDetails)." Total Questions Summited</td></tr>";
 ?>
 </table>
         </article > <!--END OF CONTENT -->

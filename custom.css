@@ -10,20 +10,28 @@ header{
     width: 100%;
     margin-left: -.3em;
 }
-h2, h3, h4, h5, h6, h7, h8{
+h2, h3, h4, h5, h6{
     text-decoration: underline;
     font-weight: bold;
     font-size: 24px;
+    color: #fff3df;
+}
+li{
+  margin: 10px 0;
 }
 img{
     max-width: 100%;
 }
-
+P{
+    line-height: 1.7em;
+}
 body{
     background-color: #616a6a;
     margin: auto;
     width: 93%; 
     font-size: 16px;
+    color: #fff3df;
+    
 }
 article{
     margin-top: 0em;
@@ -91,7 +99,7 @@ fieldset{
     padding: 1.5em;
 }
  label {
-    color: #245cb3;
+    color: #fff3df;
     display: block;
     font-weight: bold;
     padding-right: 1.5em;
@@ -144,28 +152,28 @@ select:focus{
 #errors ol li{
    color: #ff4444;
 }
-/* $$$$$$$$$$$$$$$$$$$$$$$$$ Questions $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$ Questions Form $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 table{
-    border: thin solid gray;
+    border: Thick solid gray;
     border-collapse: collapse;
    
 }
 th,td{
-    border: thin dashed gray;
+    border: thin solid gray;
     padding: .3em;
 }
 
 tr:nth-child(odd){
-       background-color: lightblue;
+       background-color: white;
        color: black;
 }
 
 tr:nth-child(even){
-       background-color: darkblue;
-       color: white;
+       background-color: lightgray;
+       color: black;
 }
 tr:hover{
-       background-color: yellowgreen;
+       background-color: lightgreen;
        
 }
 .textarea textArea{
