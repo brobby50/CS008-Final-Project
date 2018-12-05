@@ -22,7 +22,7 @@ include ('top.php');
         <li>be sure that the name is also descriptive of that branches purpose</li>
         <li>Then hit enter</li>
     </ul>
-    <h7>Deleting a branch:</h7>
+    <h6>Deleting a branch:</h6>
     <ul>
         <li>Go to the main page of your repository and click on the branch list of branches at the top navigation bar</li>
         <li>

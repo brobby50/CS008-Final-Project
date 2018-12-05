@@ -6,10 +6,11 @@ print  PHP_EOL . '<!-- SECTION: 1 Initialize variables -->' . PHP_EOL;
 
 
 print  PHP_EOL . '<!-- SECTION: 1a. debugging setup -->' . PHP_EOL;
+if($debug){   
     print '<p>Post Array:</p><pre>';
     print_r($_POST);
     print '</pre>';
-    
+}
     
 print PHP_EOL . '<!-- SECTION: 1b form variables -->' . PHP_EOL;
 //
@@ -19,7 +20,7 @@ $name = "";
 
 $email = "rbeattie@uvm.edu";  
 
-$question = "?";
+$question = "";
 
 $language = "Python";    // pick the option
 
@@ -71,9 +72,9 @@ if (isset($_POST["btnSubmit"])) {
 
     $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
     
-    $question = htmlentities($_POST["txtQuestiom"], ENT_QUOTES, "UTF-8");
+    $question = htmlentities($_POST["txtQuestion"], ENT_QUOTES, "UTF-8");
   
-    $language = htmlentities($_POST["language"], ENT_QUOTES, "UTF-8");
+    $language = htmlentities($_POST["1stLanguage"], ENT_QUOTES, "UTF-8");
     
     if (isset($_POST["chkRepositiry"])) {
     $repository = true;
@@ -118,7 +119,7 @@ if (isset($_POST["btnSubmit"])) {
     if ($name == "") {
         $errorMsg[] = "Please enter your name";
         $nameERROR = true;
-    } elseif (!verifyAlphaNum($firstName)) {
+    } elseif (!verifyAlphaNum($name)) {
         $errorMsg[] = "Your name appears to have extra character.";
         $nameERROR = true;
     }
@@ -137,18 +138,16 @@ if (isset($_POST["btnSubmit"])) {
     }
     
     // checking radio buttons
-    if ($experience != "Beginner" AND $experience != "Intermediate " AND $experience != "Proficient") {
+    if ($experience != "Beginner" AND $experience != "Intermediate" AND $experience != "Proficient") {
         $errorMsg[] = "Please choose a experience level";
         $experienceERROR = true;
     }
-    
-    
+
     // checking checkboxes
     if ($totalChecked < 1) {
     $errorMsg[] = "Please choose at least one";
     $typeERROR = true;
     }
-    
     
     //dropdown
     if ($language == "") {
@@ -221,12 +220,12 @@ if (isset($_POST["btnSubmit"])) {
         print PHP_EOL . '<!-- SECTION: 2g Mail to user -->' . PHP_EOL;
         
         $to = $email; // the person who filled out the form     
-        $cc = '';       
+        $cc = 'rbeattie@uvm.edu';       
         $bcc = '';
         
-        $from = 'Github Tutorial <customer.service@your-site.com>';
+        $from = 'GitHub Tutorial <customer.service@your-site.com>';
         
-        $subject = 'Groovy: ';
+        $subject = 'Question Summited: ';
         
         
         $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
@@ -241,8 +240,6 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
 <main>
     <article>
         <?php
-        
-        
         print PHP_EOL . '<!-- SECTION 3a  -->' . PHP_EOL;
 
         if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked with: end body submit
@@ -297,7 +294,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                             placeholder="Enter your name"
                             tabindex="100"
                             type="text"
-                            value="<?php print $firstName; ?>"                    
+                            value="<?php print $name; ?>"                    
                     >                    
                 </p>
                 <p>
@@ -323,11 +320,11 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                         id="txtQuestion" 
                         name="txtQuestion" 
                         onfocus="this.select()" 
-                        tabindex="200"><?php print $comments; ?></textarea>
+                        tabindex="200"><?php print $question; ?></textarea>
                 </p>
             </fieldset><!-- ends question area -->
             
-            <fieldset  class="listbox <?php if ($language) print ' mistake'; ?>">
+            <fieldset  class="listbox <?php if ($language) print 'class=mistake'; ?>">
                 <legend>Programming Language </legend>
                 <p>
                     <select id="1stLanguage" 
@@ -368,8 +365,8 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                 <p>
                     <label class="check-field">
                         <input <?php if ($repository) print " checked "; ?>
-                            id="chkRepository"
-                            name="chkRepository"
+                            id="chkRepositiry"
+                            name="chkRepositiry"
                             tabindex="420"
                             type="checkbox"
                             value="Repository">Repository</label>
@@ -412,7 +409,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                 </p>
             </fieldset><!-- ends check boxes -->
             
-            <fieldset class="radio <?php if ($experience) print ' mistake'; ?>">
+            <fieldset class="radio <?php if ($experience) print 'class=mistake'; ?>">
                 <legend>What is your Git experience level?</legend>
                 <p>    
                     <label class="radio-field"><input type="radio" id="radExperienceBeginner" name="radExperience" value="Beginner" tabindex="572" 
@@ -438,6 +435,10 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
         </form>     
 <?php
     } // ends body submit
+    ?>
+    </article>
+</main>
+<?php
 include ('footer.php');
 ?>
 </body>
