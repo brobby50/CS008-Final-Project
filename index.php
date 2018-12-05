@@ -3,6 +3,10 @@ include ('top.php');
 ?>
 <article> 
     <h2>What is GitHub</h2>
+    <figure class="homeImage">
+        <img alt="" src = "images/workflow.png">
+                <figcaption>https://www.linode.com/docs/development/version-control/how-to-install-git-and-clone-a-github-repository/git-github-workflow-1000w.png</figcaption>
+    </figure>
     <h3>What is “Git”</h3>
     <p>Git is an open source version control system that was started by Linus Torvalds. Torvalds is a Finnish-American software engineer that is most famous for creating Linux Kernel, an Operating System that is used today by companies such as Android and Google. Git is a service that helps authors of different software keep track of all the edits made to their project. Documenting all changes made to software is a very difficult and daunting task. It can much too often be the Achilles tendon to many good software engineers. Version control systems such as Git track all modifications made to the software by storing them in a central repository. From there developers can easily download the new software, make more edits, and reupload that software making collaboration very easy. Git also allows users who aren’t contributors to a certain project download the files and use them. If you have any experience using Linux, then you will probably find this process of using GitHub much easier. </p>
     <h4>What is the “Hub”</h4>

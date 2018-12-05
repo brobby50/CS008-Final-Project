@@ -51,33 +51,54 @@ include ('top.php');
 ?>
 
 <article id ='content'>
-    <h2>Weather Change</h2>
+    <h2>Question Form</h2>
     <table>
         <tr>
             <th>Name</th>
             <th>Email</th>
             <th>Question</th>
             <th>Programming Language</th>
-            <th>Repository</th>
-            <th>Push Pull</th>
-            <th>Branch</th>
-            <th>Merging</th>
-            <th>Other</th>
+            <th>About</th>
             <th>Git Experience</th>
 
         </tr>
 <?php
-    for($i = 0; $i < count($questionDetails); $i++){
+    for($i = 1; $i < count($questionDetails)-1; $i++){
         print'<tr>';
         print'<td>' . $questionDetails[$i][0] . '</td>';
         print'<td>' . $questionDetails[$i][1] . '</td>';
         print'<td>' . $questionDetails[$i][2] . '</td>';
         print'<td>' . $questionDetails[$i][3] . '</td>';
-        print'<td>' . $questionDetails[$i][4] . '</td>';
-        print'<td>' . $questionDetails[$i][5] . '</td>';
-        print'<td>' . $questionDetails[$i][6] . '</td>';
-        print'<td>' . $questionDetails[$i][7] . '</td>';
-        print'<td>' . $questionDetails[$i][8] . '</td>';
+        print'<td>';
+        if ($questionDetails[$i][4] == 1) {
+            print 'Repository';
+            if($questionDetails[$i][5] == 1 || $questionDetails[$i][6] == 1 || $questionDetails[$i][7] == 1 || $questionDetails[$i][8] == 1){
+                print ', ';
+            }   
+        }
+        if ($questionDetails[$i][5] == 1) {
+            print 'Push Pull';
+            if($questionDetails[$i][6] == 1 || $questionDetails[$i][7] == 1 || $questionDetails[$i][8] == 1){
+                print ', ';
+            }
+        }
+        if ($questionDetails[$i][6] == 1) {
+            print 'Branch';
+            if($questionDetails[$i][7] == 1 || $questionDetails[$i][8] == 1){
+                print ', ';
+            }
+        }
+        if ($questionDetails[$i][7] == 1) {
+            print 'Merging';
+            if($questionDetails[$i][8] == 1){
+                print ', ';
+            }
+        }
+        if ($questionDetails[$i][8] == 1) {
+            print 'Other';
+        }
+        print'</td>';
+
         print'<td>' . $questionDetails[$i][9] . '</td>';
         print'</tr>' . PHP_EOL;
     }
