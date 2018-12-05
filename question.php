@@ -1,10 +1,6 @@
 <?php
 include ('top.php');
 
-$weatherStation = '';
-if(isset($_GET['weatherStation'])){
-    $weatherStation = htmlentities($_GET['weatherStation'], ENT_QUOTES, "UTF-8");
-}
     // Open a CSV file
     $debug = false;
 
@@ -38,71 +34,55 @@ if(isset($_GET['weatherStation'])){
             if ($debug){
                 print '<p>Begin reading data into an array.</p>';
             }
-            // read the header row, copy the line for each header row
-            // you have.
-            $headers[] = fgetcsv($file);
-
-            if ($debug) {
-                print '<p>Finished reading headers.</p>';
-                print '<p>My header array</p><pre>';
-                print_r($headers);
-                print '</pre>';
-            }
-
             // read all the data
             while (!feof($file)) {
-                $weatherDetails[] = fgetcsv($file);
+                $questionDetails[] = fgetcsv($file);
             }
 
             if ($debug) {
                 print '<p>Finished reading data. File closed.</p>';
                 print '<p>My data array<p><pre> ';
-                print_r($weatherDetails);
+                print_r($questionDetails);
                 print '</pre></p>';
             }
         } // ends if file was opened 
     //close file
         fclose($file);
 ?>
-            <article id ='Burlington Weather Data'>
-                <h2>Detailed Weather</h2>
-                <table>
+
+<article id ='content'>
+    <h2>Weather Change</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Question</th>
+            <th>Programming Language</th>
+            <th>Repository</th>
+            <th>Push Pull</th>
+            <th>Branch</th>
+            <th>Merging</th>
+            <th>Other</th>
+            <th>Git Experience</th>
+
+        </tr>
 <?php
-    foreach($headers as $header){            
+    for($i = 0; $i < count($questionDetails); $i++){
         print'<tr>';
-        print'<th>' . $header[0] . '</th>';
-        print'<th>' . $header[1] . '</th>';
-        print'<th>' . $header[2] . '</th>';
-        print'<th>' . $header[3] . '</th>';
-        print'<th>' . $header[4] . '</th>';
-        print'<th>' . $header[5] . '</th>';
-        print'<th>' . $header[6] . '</th>';
-        print'<th>' . $header[7] . '</th>';
-        print'<th>' . $header[8] . '</th>';
-        print'<th>' . $header[9] . '</th>';
-        print'</tr>';
-        
-    }
-    $totalWeatherDetail = 0;
-    foreach($weatherDetails as $weatherDetail){   
-        $thisWeatherStation = str_replace(' ', '', $weatherDetail[1]);
-        if($weatherStation == $thisWeatherStation){
-            $totalWeatherDetail++;
-        print'<tr>';
-        print'<td>' . $weatherDetail[0] . '</td>';
-        print'<td>' . $weatherDetail[1] . '</td>';
-        print'<td>' . $weatherDetail[2] . '</td>';
-        print'<td>' . $weatherDetail[3] . '</td>';
-        print'<td>' . $weatherDetail[4] . '</td>';
-        print'<td>' . $weatherDetail[5] . '</td>';
-        print'<td>' . $weatherDetail[6] . '</td>';
-        print'<td>' . $weatherDetail[7] . '</td>';
-        print'<td>' . $weatherDetail[8] . '</td>';
-        print'<td>' . $weatherDetail[9] . '</td>';
+        print'<td>' . $questionDetails[$i][0] . '</td>';
+        print'<td>' . $questionDetails[$i][1] . '</td>';
+        print'<td>' . $questionDetails[$i][2] . '</td>';
+        print'<td>' . $questionDetails[$i][3] . '</td>';
+        print'<td>' . $questionDetails[$i][4] . '</td>';
+        print'<td>' . $questionDetails[$i][5] . '</td>';
+        print'<td>' . $questionDetails[$i][6] . '</td>';
+        print'<td>' . $questionDetails[$i][7] . '</td>';
+        print'<td>' . $questionDetails[$i][8] . '</td>';
+        print'<td>' . $questionDetails[$i][9] . '</td>';
         print'</tr>' . PHP_EOL;
-        }
     }
-    print '<tr><td colspan="10">' . $totalWeatherDetail." Total Daily Observations</td></tr>";
+   
+    print '<tr><td colspan="10">' . count($questionDetails)." Total Questions Summited</td></tr>";
 ?>
 </table>
         </article > <!--END OF CONTENT -->

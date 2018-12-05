@@ -7,7 +7,7 @@ $path_parts = pathinfo($phpSelf);
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Final Project</title>
+        <title>GitHub Tutorial</title>
 
         <meta charset="utf-8">
         <meta name="author" content="Robby and Cole">
@@ -16,6 +16,8 @@ $path_parts = pathinfo($phpSelf);
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="custom.css" type="text/css" media="screen">
+        
+        <link rel="shortcut icon" href="images/logo_XcL_icon.ico" type="image/x-icon" />
 
     </head>
     

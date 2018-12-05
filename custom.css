@@ -32,6 +32,7 @@ article{
 ul {
 list-style-type: none;
 }
+
 /* ########################## Dropdown menu ############################# */
 nav{
     padding: 27px;
@@ -142,4 +143,28 @@ select:focus{
 }     
 #errors ol li{
    color: #ff4444;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$ Questions $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+table{
+    border: thin solid gray;
+    border-collapse: collapse;
+   
+}
+th,td{
+    border: thin dashed gray;
+    padding: .3em;
+}
+
+tr:nth-child(odd){
+       background-color: lightblue;
+       color: black;
+}
+
+tr:nth-child(even){
+       background-color: darkblue;
+       color: white;
+}
+tr:hover{
+       background-color: yellowgreen;
+       
 }
