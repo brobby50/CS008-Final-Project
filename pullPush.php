@@ -9,7 +9,7 @@ include ('top.php');
     <h4>Hot to commit changes</h4>
     <ul>
         <li>First you go to your repository’s page</li>
-        <li>then you select the file that you want to edit</li>
+        <li>Then you select the file that you want to edit</li>
         <li>
             <figure class="pull">
                 <img alt="" src = "images/pull1.jpg">
@@ -45,7 +45,7 @@ include ('top.php');
             </figure>
         </li>
         <li>Then you are brought to a new page that gives you the history of pervious Pull requests as well as the option to create a new Pull request</li>
-        <li>click on “New Pull Request”</li>
+        <li>Click on “New Pull Request”</li>
         <li>
             <figure class="pull">
                 <img alt="" src = "images/pull5.jpg">

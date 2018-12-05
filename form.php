@@ -319,7 +319,8 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                     <textarea <?php if ($questionERROR) print 'class="mistake"'; ?>
                         id="txtQuestion" 
                         name="txtQuestion" 
-                        onfocus="this.select()" 
+                        onfocus="this.select()"
+                        placeholder="Enter your question"
                         tabindex="200"><?php print $question; ?></textarea>
                 </p>
             </fieldset><!-- ends question area -->

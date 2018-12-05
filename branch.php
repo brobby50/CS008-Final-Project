@@ -2,7 +2,6 @@
 include ('top.php');
 ?>
 <article> 
-    <h2>Final Project branch</h2>
     <h3>What is a branch:</h3>
     <p>Branches are an easy way to make changes to repositories. Each repository has a master branch. Branching is a way to make changes or edits to the repository by making a copy of the master branch. Anytime you make a branch off the master branch, you’re creating an exact copy of the master branch as a new branch. On this new branch you’re able to make edits without changing anything on the original master branch. If you have any experience with coding, then you’ve probably made copies of files to edit them. For example, if you have a project called “project.exe” then you’ve probably made a copy called something like “project-edit.exe” so that you can test new features without making changes to the original. Branching is very similar to creating copies of files, but it’s a much easier and automated process.</p>
     <h4>Things to remember:</h4>
@@ -19,7 +18,7 @@ include ('top.php');
             </figure>
         </li>
         <li>Then you simple enter a unique name to your name</li>
-        <li>be sure that the name is also descriptive of that branches purpose</li>
+        <li>Be sure that the name is also descriptive of that branches purpose</li>
         <li>Then hit enter</li>
     </ul>
     <h6>Deleting a branch:</h6>
@@ -31,7 +30,7 @@ include ('top.php');
                 <figcaption></figcaption>
             </figure>
         </li>
-        <li>click on “branches” and you will be brought to your list of branches</li>
+        <li>Click on “branches” and you will be brought to your list of branches</li>
         <li>From here click the red trash can item next to the option to make a new repository</li>
         <li>
             <figure class="branch">

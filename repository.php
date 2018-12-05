@@ -9,28 +9,28 @@
         <h3>How to make a repository:</h3>
         <ul>
             <li>First you must click the plus sign in the top right corner</li>
-            <li>then select “new repository” from the drop-down menu</li>
+            <li>Then select “new repository” from the drop-down menu</li>
             <li>
                 <figure class="repository">
                     <img alt="" src = "images/repository1.png">
                     <figcaption></figcaption>
                 </figure>
             </li>
-            <li>then you must decide on a name for your repository</li>
+            <li>Then you must decide on a name for your repository</li>
             <li>
                 <figure class="repository">
                     <img alt="" src = "images/repository2.jpg">
                     <figcaption></figcaption>
                 </figure>
             </li>
-            <li>include a description of the repository (this is optional)</li>
+            <li>Include a description of the repository (this is optional)</li>
             <li>
                 <figure class="repository">
                     <img alt="" src = "images/repository3.jpg">
                     <figcaption></figcaption>
                 </figure>
             </li>
-            <li>then you can select whether or the repository is public or private</li>
+            <li>Then you can select whether or the repository is public or private</li>
             <li>
                 <figure class="repository">
                     <img alt="" src = "images/repository4.jpg">
@@ -72,7 +72,7 @@
                     <figcaption></figcaption>
                 </figure>
             </li>
-            <li>next you chose a pricing plan</li>
+            <li>Next you chose a pricing plan</li>
             <li>
                 <figure class="repository">
                     <img alt="" src = "images/repository9.jpg">

@@ -2,7 +2,6 @@
 include ('top.php');
 ?>
 <article> 
-    <h2>Final Project merge</h2>
     <h3>Merging Branches and Git Flow</h3>
     <h4>Merging</h4>
     <p>The final step of editing any repository is to merge two branches. One of the branches will always be the master branch and the other will be a copy of the master branch that has been edited. By merging the two branches programmers can take the changes made in one branch and apply them to the other. Both branches will remain.</p>
@@ -32,7 +31,6 @@ include ('top.php');
     <p>Before a pull request is approved, members of the team often meet and talk about the code that they are changing. This is always important to both to make sure that everyone on a team is on the same page but also to make sure that the code is being validated by every member of a team. If you are working on a project on GitHub individually, then you won’t need to meet a discuss pull requests, just review them on your own.</p>
     <p>Once you have discuss the code then you can merge two branches. Once you merge two branches then any changes made to another branch become permanent. It’s always important to comment what the nature of the change is so that it’s easier documented for other contributors to understand the changes.</p>
     <p>Finally, you implement your code from GitHub. You can download the files or copy and paste the code into your development software. From then the code is implemented and ready for use. </p>
-    <p>info</p>
     </article>
 <?php
 include ('footer.php');
